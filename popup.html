@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Now Playing for Web</title>
+    <link rel="stylesheet" href="css/icon.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<form id="form">
+    <fieldset>
+        <legend>Sync Settings</legend>
+        <div class="container">
+            <div class="row">
+                <input type="checkbox" name="#gpm" id="gpm" checked/> <label for="hash" title='href="#"'>Google Play Music</label>
+            </div>
+        </div>
+
+        <legend>User Name</legend>
+        <input type="text" name="#username" id="username" size="30">
+        <legend id="slack_key_valid">Slack Hook URL</legend>
+        <input type="text" name="#slack_key" id="slack_key" size="100">
+    </fieldset>
+</form>
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
