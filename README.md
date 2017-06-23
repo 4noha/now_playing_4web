@@ -18,3 +18,6 @@ MacのiTunes用 \
 https://gist.github.com/nokkii/d6a9e5db0421752e5dbda11951fed2cd \
 WindowsのiTunes用 \
 https://gist.github.com/nokkii/3f91474c0277b1d7422663d5cab4d638
+
+以下の記事を参考にしました♫ \
+https://liginc.co.jp/web/tool/browser/163575
