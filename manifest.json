@@ -26,7 +26,8 @@
   "content_scripts": [
     {
       "matches": [
-        "https://play.google.com/music/listen*"
+        "https://play.google.com/music/listen*",
+        "https://www.youtube.com/watch*"
       ],
       "css": ["css/contents_style.css"],
       "js": ["js/content_scripts/playback.js"]
