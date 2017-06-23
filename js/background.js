@@ -9,7 +9,8 @@
     if ( message.type === 'nextTrack' ) {
       chrome.storage.local.get( 'options', function( data ) {
         if ( ( data.options['#gpm'] && message.value['hostname'] === 'play.google.com' ) ||
-             ( data.options['#youtube'] && message.value['hostname'] === 'www.youtube.com' ) ) {
+             ( data.options['#youtube'] && message.value['hostname'] === 'www.youtube.com' ) ||
+             ( data.options['#scloud'] && message.value['hostname'] === 'soundcloud.com' ) ) {
             var trackInfo = message.value['text'];
             trackInfo += data.options['#username'] != null ? `${data.options['#username']}` : '';
             reqData['text'] = trackInfo;

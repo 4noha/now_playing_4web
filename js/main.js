@@ -106,6 +106,13 @@
       run_checker();
     });
 
+    $('#scloud').change( function(e) {
+      if ( typeof e !== 'undefined' ) {
+        e.preventDefault();
+      }
+      run_checker();
+    });
+
 
     // Slack API Default Key
     if ( defaultSlackKey != 'Organization\'s Token' ) {
