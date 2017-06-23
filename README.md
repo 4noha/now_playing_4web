@@ -1,4 +1,6 @@
 # Now Playing for Web
+![拡張機能](docs/precure.png) \
+![拡張機能](docs/play.png) \
 社内のSlackの\#now-playingチャンネルに音楽等の再生情報を投稿するGoogle Chrome拡張です。投稿先はincomming WebhooksのWebhook URLを取得する際に指定することができます。Web Hook URLの取得方法についてはここでは説明しません。
 
 YouTube, SoundCloud, Google Play Music, dmm.co.jp(動画)に対応しています。荒削りなのでプルリク歓迎。
