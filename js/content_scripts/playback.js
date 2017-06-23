@@ -4,8 +4,10 @@
   // TODO: ポーリングからDOM監視にする
   if ( window.location.hostname === 'www.youtube.com' ) {
     setInterval( function() {
+      var nextTrack = null;
+
       if ( document.getElementById('eow-title') ){
-        var nextTrack = 'Now Playing - ';
+        nextTrack = 'Now Playing - ';
         nextTrack += `${document.getElementById('eow-title').title} ♫♫ `;
       }
 
@@ -21,9 +23,11 @@
 
   } else if ( window.location.hostname === 'soundcloud.com' ) {
     setInterval( function() {
+      var nextTrack = null;
+
       titleClassTags = document.getElementsByClassName( 'playbackSoundBadge__titleLink sc-truncate' );
       if ( titleClassTags.length == 1 ){
-        var nextTrack = 'Now Playing - ';
+        nextTrack = 'Now Playing - ';
         nextTrack += titleClassTags[0].title;
 
         artistClassTags = document.getElementsByClassName( "playbackSoundBadge__lightLink sc-link-light sc-truncate" );
@@ -47,9 +51,11 @@
 
   } else if ( window.location.hostname === 'www.dmm.co.jp' ) {
     setInterval( function() {
+      var nextTrack = null;
+
       titleClassTags = document.getElementsByClassName( 'title' );
       if ( titleClassTags.length == 1 ){
-        var nextTrack = 'Now Playing - ';
+        nextTrack = 'Now Playing - ';
         nextTrack += `${titleClassTags[0].innerHTML} ♫♫ `;
       }
 
