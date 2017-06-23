@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Now Playing",
   "description": "This extension share the played music information.",
-  "version": "1.2",
+  "version": "1.3",
   "icons": {
     "16": "images/icon/icon_16.png",
     "48": "images/icon/icon_48.png",
@@ -28,7 +28,8 @@
       "matches": [
         "https://play.google.com/music/listen*",
         "https://www.youtube.com/watch*",
-        "https://soundcloud.com/*"
+        "https://soundcloud.com/*",
+        "http://www.dmm.co.jp/digital/-/player/*"
       ],
       "css": ["css/contents_style.css"],
       "js": ["js/content_scripts/playback.js"]

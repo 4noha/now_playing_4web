@@ -45,6 +45,24 @@
       }
     }, 2000);
 
+  } else if ( window.location.hostname === 'www.dmm.co.jp' ) {
+    setInterval( function() {
+      titleClassTags = document.getElementsByClassName( 'title' );
+      if ( titleClassTags.length == 1 ){
+        var nextTrack = 'Now Playing - ';
+        nextTrack += `${titleClassTags[0].innerHTML} ♫♫ `;
+      }
+
+      if ( trackInfo != nextTrack ) {
+        trackInfo = nextTrack;
+
+        chrome.extension.sendMessage({
+          type: 'nextTrack',
+          value: { 'hostname': window.location.hostname, text: nextTrack }
+        });
+      }
+    }, 2000);
+
   } else if ( window.location.hostname === 'play.google.com' ) {
     setInterval( function() {
       if ( document.getElementById('currently-playing-title') ) {
